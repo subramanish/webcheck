@@ -1,0 +1,102 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.mydiv {
+    width: 30%;
+    /* Set the size of your div */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.myboy {
+    width: 30%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#rightside {
+    background-color: rgb(238, 234, 234);
+}
+
+#leftside {
+    background-color: rgb(238, 234, 234);
+}
+
+#middle {
+    width: 30%;
+    /* Set the size of your div */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+img {
+    padding-bottom: 15px;
+}
+
+.mydiv img {
+    cursor: pointer;
+}
+
+
+
+
+#boycap {
+    position: relative;
+    width: 100%;
+    height: 90%;
+    border: 2px solid black;
+    animation-name: example;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    border-radius: 10px;
+}
+
+
+@keyframes example {
+    from {
+        border: 2px solid black;
+    }
+    
+    to {
+        border: 2px dashed rgb(236, 8, 8);
+    }
+}
+
+
+#caps {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    top: 23px;
+    left: 70px;
+}
+
+#caps img {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
+
+#boyonly {
+    top: 45px;
+    left: 27px;
+    position: absolute;
+}
