@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <main>
+
+        <div id="leftside" class="mydiv">
+            <img src="./cap1.png" height="150px" id="cap1" class="clickcap" alt="">
+            <img src="./cap2.png" height="150px" id="cap2" class="clickcap" alt="">
+            <img src="./cap3.png" height="150px" id="cap3" class="clickcap" alt="">
+
+        </div>
+        <div id="middle" class="myboy">
+            <div id="boycap">
+                <img src="./boy copy.png" id="boyonly" height="650px" alt="">
+                <div id="caps">
+                    <img src="./cap1.png" id="caponly" height="150px" alt="">
+                </div>
+            </div>
+
+        </div>
+        <div id="rightside" class="mydiv">
+
+            <img src="./cap4.png" height="150px" id="cap4" class="clickcap" alt="">
+            <img src="./cap5.png" height="150px" id="cap5" class="clickcap" alt="">
+            <img src="./cap6.png" height="150px" id="cap6" class="clickcap" alt="">
+
+            <button id="removecap"> REMOVE CAP</button>
+            <button id="addcap"> ADD CAP</button>
+        </div>
+
+
+
+
+
+    </main>
+
+    <script>
+        $(document).ready(function(){
+            alert("welcome gang")
+        })
+
+        $('.clickcap').click(function(e){
+            src_id = event.target.id
+            src_toid = "./" + src_id + ".png"
+            
+            $('#caponly').attr("src", src_toid)
+        })
+
+        $("#removecap").click(function() {
+            $('#caponly').css("display", "none")
+        })
+        
+        $("#addcap").click(function() {
+            $('#caponly').css("display", "block")
+        })
+    </script>
+
+
+</body>
+
+</html>
