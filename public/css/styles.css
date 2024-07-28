@@ -1,0 +1,271 @@
+/* Basic reset for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #330033;
+    line-height: 1.6;
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
+/* Container styling */
+.container {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 150px;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Block styling for sections */
+.block {
+    margin-bottom: 30px;
+    padding: 10px;
+    background: #c7dff8;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+}
+
+.block h2 {
+    margin-bottom: 20px;
+    font-size: 1.75em;
+    color: #1f2937;
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 10px;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    flex: 1 1 100%;
+}
+
+.form-group.half {
+    flex: 1 1 48%;
+    margin-right: 2%;
+}
+
+.form-group.half:nth-child(2n) {
+    margin-right: 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #000000;
+}
+
+input[type="text"],
+input[type="url"],
+input[type="email"],
+input[type="tel"],
+input[type="datetime-local"],
+input[type="number"],
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #1f2937;
+    background-color: #f9fafb;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="url"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="datetime-local"]:focus,
+input[type="number"]:focus,
+textarea:focus,
+select:focus {
+    border-color: #2563eb;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    display: inline-block;
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background: #1d4ed8;
+}
+
+input[type="checkbox"] {
+    margin-left: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .block {
+        padding: 10px;
+    }
+
+    .form-group.half {
+        flex: 1 1 100%;
+        margin-right: 0;
+    }
+}
+
+.sidebar {
+    padding: 15px;
+    border-radius: 15px;
+    margin-right: 15px;
+  }
+
+  .sidebar {
+    width: 200px;
+    height: 25vh;
+  }
+
+  .sidebar {
+    position: fixed;
+  top: 30%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  }
+
+  button{
+    margin-top: 20px ;
+    display: inline-block;
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background 0.3s ease;
+  }
+
+
+  button:hover {
+    background: #1d4ed8;
+}
+
+
+
+
+/* cpv */
+
+#cpvframe{
+    width: 800px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+}
+
+#cpvlist{
+    width: 100%;
+    height: 560px;
+    border: 1px solid blue;
+    overflow-y: auto;
+    
+}
+
+#searchtxtid{
+    width: 99%;
+    height: 60px;
+    padding-left: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+ul li{
+    list-style: none;
+    border-bottom: 1px solid rgb(200, 155, 242);
+    padding-top: 2px;
+    padding-bottom: 2px;
+    cursor: pointer;
+}
+
+ul li:hover{
+    background-color: blueviolet;
+    color: white;
+}
+
+.class_common{
+    display: none;
+}
+
+
+.selected{
+    font-weight: bold;
+}
+
+
+.fa-chevron-circle-down{
+    color: rgb(200, 155, 242);
+}
+
+
+.class_null{
+    display: block;
+    font-family: Calibri;
+    background-color: rgb(227, 232, 234);
+}
+
+
+#cpvselectedlist{
+    width: 100%;
+    height: 200px;
+    border: 1px solid blue;
+    overflow-y: auto;
+}
+
+#cpvselected_select{
+    width: 100%;
+    height: 100%;
+}
+
+#cpvfindlist{
+    width: 100%;
+    height: 30%;
+    border: 1px solid blue;
+    overflow-y: auto;
+}
+
+
+#cpvmainbox{
+    display: none;
+}
+
+.form-group1{
+    margin-left: 20px;
+}
